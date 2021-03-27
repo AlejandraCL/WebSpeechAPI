@@ -73,7 +73,7 @@ if(SpeechRecognition) {
     // }, 500);
   }
   
-  info.textContent = 'Voice Commands: "Grabar", "Buscar", "Borrar"';
+  info.textContent = 'Voice Commands: "Grabar", "Localiza", "Borrar"';
   
 }
 else {
