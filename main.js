@@ -56,10 +56,10 @@ if(SpeechRecognition) {
       searchFormInput.value = transcript;
     }
     else {
-      if(transcript.toLowerCase().trim()==="Buscar") {
+      if(transcript.toLowerCase().trim()==="localiza") {
         searchForm.submit();
       }
-      else if(transcript.toLowerCase().trim()==="Borrar") {
+      else if(transcript.toLowerCase().trim()==="borrar") {
         searchFormInput.value = "";
       }
       else {
