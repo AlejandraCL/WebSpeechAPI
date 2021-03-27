@@ -49,17 +49,17 @@ if(SpeechRecognition) {
     const current = event.resultIndex;
     const transcript = event.results[current][0].transcript;
     
-    if(transcript.toLowerCase().trim()==="parar grabación") {
+    if(transcript.toLowerCase().trim()==="Grabar") {
       recognition.stop();
     }
     else if(!searchFormInput.value) {
       searchFormInput.value = transcript;
     }
     else {
-      if(transcript.toLowerCase().trim()==="buscar") {
+      if(transcript.toLowerCase().trim()==="Buscar") {
         searchForm.submit();
       }
-      else if(transcript.toLowerCase().trim()==="borrar") {
+      else if(transcript.toLowerCase().trim()==="Borrar") {
         searchFormInput.value = "";
       }
       else {
@@ -73,7 +73,7 @@ if(SpeechRecognition) {
     // }, 500);
   }
   
-  info.textContent = 'Voice Commands: "para grabación", "borrar", "buscar"';
+  info.textContent = 'Voice Commands: "Grabar", "Buscar", "Borrar"';
   
 }
 else {
